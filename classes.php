@@ -550,7 +550,7 @@
            
            $fullname=$this->getFullname($username);
            $venerologist_name=$this->getvenname($venerologist_id);
-           $appno=$this->getAppointment($date,$time);   
+           $appno=$this->getAppointment($date,$time,$venerologist_id);   
            $status="booked";
            $sameApp=$this->repeatApp($username,$date,$time,$venerologist_id);
            $randNumber=$this->generateRand();
@@ -590,9 +590,9 @@
          }
       }
 
-    private function getAppointment($date,$time){
+    private function getAppointment($date,$time,$venerologist_id){
         $app;
-        $sql="SELECT app_no FROM appointment WHERE date_of='$date' AND timeslot='$time' ORDER BY app_no desc LIMIT 1";
+        $sql="SELECT app_no FROM appointment WHERE date_of='$date' AND timeslot='$time' and userid='$venerologist_id' ORDER BY app_no desc LIMIT 1";
         $exe=mysqli_query($this->connect,$sql);
         if(mysqli_num_rows($exe)>0){
             while($row=mysqli_fetch_assoc($exe)){
