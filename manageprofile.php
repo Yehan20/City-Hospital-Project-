@@ -39,7 +39,7 @@
         <nav class="nav">
             <ul class="list">
                 <li class="list__item"><a class="link__item" href="UserHome.php">Home</a></li>
-                <li class="list__item"><a class="link__item" href="manageProfile.php">Mange Profile</a></li>
+                <li class="list__item"><a class="link__item" href="#">Mange Profile</a></li>
                 <li class="list__item">
                       <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post">
                          <input type="submit" class="btn btn__register" value="Logout" name="logout">
