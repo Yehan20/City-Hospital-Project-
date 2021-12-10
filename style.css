@@ -442,7 +442,7 @@ li{
 }
 
 
-@media (min-width:680px){
+@media (min-width:780px){
    
      .intro__text{
          max-width:830px;
@@ -485,6 +485,9 @@ li{
      }
      .fight__img{
          order:2;
+         display:block;
+         margin-left:auto;
+         margin-right:auto;
      }
     
      .card p{
