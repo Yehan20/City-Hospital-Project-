@@ -377,6 +377,10 @@ li{
     margin:2em 0;
    
 }
+.fight__img,.team__pic{
+    margin: 0 auto;
+}
+
 /* facts */
 .facts{
     padding: 1em;
