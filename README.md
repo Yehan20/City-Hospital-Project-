@@ -12,6 +12,8 @@
   
   only doctors, and admin can login using the login in the nav bar, admins can create doctors only
   
+  The live site is <a href="https://city-hospital-project.herokuapp.com/" target="_blank">City Hospital</a>
+  
   -----
 
   <img src="https://raw.githubusercontent.com/Yehan20/City-Hospital-Project-/main/ui/home.PNG" alt="drawing" width="90%"/>
